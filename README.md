@@ -19,9 +19,9 @@ cd    angular-quickstart
 ###### Create configuration files
 Our typical Angular project needs several configuration files:
 
-1. package.json: identifies npm package dependencies for the project.
-2. tsconfig.json: defines how the TypeScript compiler generates JavaScript from the project's files.
-3. systemjs.config.js: provides information to a module loader about where to find application modules, and registers all the necessary packages. It also contains other packages that will be needed by later documentation examples.
+1. **package.json**: identifies npm package dependencies for the project.
+2. **tsconfig.json**: defines how the TypeScript compiler generates JavaScript from the project's files.
+3. **systemjs.config.js**: provides information to a module loader about where to find application modules, and registers all the necessary packages. It also contains other packages that will be needed by later documentation examples.
 Create each of these files in your project directory. Populate them by pasting in text from the tabs in the example box below.
 
 package.json
@@ -128,4 +128,35 @@ systemjs.config.js
     }
   });
 })(this);
+```
+###### Install packages
+Using npm from the command line, install the packages listed in package.json with the command:
+
+COPY CODE
+```
+npm install
+```
+Error messages—in red—might appear during the install, and you might see npm WARN messages. As long as there are no npm ERR! messages at the end, you can assume success.
+
+**Step 2: Create your application
+
+You compose Angular applications into closely related blocks of functionality with NgModules. Angular itself is split into separate Angular Modules. This makes it possible for you to keep payload size small by only importing the parts of Angular that your application needs.
+
+Every Angular application has at least one module: the root module, named AppModule here.
+
+Create an app subfolder off the project root directory:
+
+COPY CODE
+```
+mkdir app
+```
+Create the file app/app.module.ts with the following content:
+```
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+@NgModule({
+  imports:      [ BrowserModule ]
+})
+export class AppModule { }
 ```
