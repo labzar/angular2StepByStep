@@ -1,13 +1,13 @@
 # angular2StepByStep
 ## QUICKSTART
 The QuickStart application has the structure of a real-world Angular application and displays the simple message: Hellooo World :)
-###### Prerequisite: Install Node.js and npm
+** Prerequisite: Install Node.js and npm**
 
 If Node.js and npm aren't already on your machine, install them. Our examples require node v4.x.x or higher and npm 3.x.x or higher. To check which version you are using, run node -v and npm -v in a terminal window.
 
-###### Step 1: Create and configure the project
+**Step 1: Create and configure the project**
 
-**Create the project folder**
+###### Create the project folder###### 
 Using a terminal window, create a directory for the project, and change into this directory.
 
 COPY CODE
@@ -16,15 +16,15 @@ mkdir angular-quickstart
 cd    angular-quickstart
 ```
 
-**Create configuration files**
+###### Create configuration files###### 
 Our typical Angular project needs several configuration files:
 
-> package.json: identifies npm package dependencies for the project.
-> tsconfig.json: defines how the TypeScript compiler generates JavaScript from the project's files.
-> systemjs.config.js: provides information to a module loader about where to find application modules, and registers all the necessary packages. It also contains other packages that will be needed by later documentation examples.
+1. package.json: identifies npm package dependencies for the project.
+2. tsconfig.json: defines how the TypeScript compiler generates JavaScript from the project's files.
+3. systemjs.config.js: provides information to a module loader about where to find application modules, and registers all the necessary packages. It also contains other packages that will be needed by later documentation examples.
 Create each of these files in your project directory. Populate them by pasting in text from the tabs in the example box below.
 
-> package.json
+package.json
 ```
 {
   "name": "angular-quickstart",
