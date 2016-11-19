@@ -7,7 +7,7 @@ If Node.js and npm aren't already on your machine, install them. Our examples re
 
 **Step 1: Create and configure the project**
 
-###### Create the project folder###### 
+###### Create the project folder
 Using a terminal window, create a directory for the project, and change into this directory.
 
 COPY CODE
@@ -16,7 +16,7 @@ mkdir angular-quickstart
 cd    angular-quickstart
 ```
 
-###### Create configuration files###### 
+###### Create configuration files
 Our typical Angular project needs several configuration files:
 
 1. package.json: identifies npm package dependencies for the project.
