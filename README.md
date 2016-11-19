@@ -138,7 +138,7 @@ npm install
 ```
 Error messages—in red—might appear during the install, and you might see npm WARN messages. As long as there are no npm ERR! messages at the end, you can assume success.
 
-** Step 2: Create your application
+** Step 2: Create your application **
 
 You compose Angular applications into closely related blocks of functionality with NgModules. Angular itself is split into separate Angular Modules. This makes it possible for you to keep payload size small by only importing the parts of Angular that your application needs.
 
