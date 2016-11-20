@@ -1,7 +1,7 @@
 # angular2StepByStep
 ## QUICKSTART
 The QuickStart application has the structure of a real-world Angular application and displays the simple message: Hellooo World :)
-** Prerequisite: Install Node.js and npm**
+**Prerequisite: Install Node.js and npm**
 
 If Node.js and npm aren't already on your machine, install them. Our examples require node v4.x.x or higher and npm 3.x.x or higher. To check which version you are using, run node -v and npm -v in a terminal window.
 
