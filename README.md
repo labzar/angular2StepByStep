@@ -205,3 +205,7 @@ This is the entry point to your application.
   </body>
 </html>
 ```
+So now just run the COMMAND : 
+```
+npm start
+```
