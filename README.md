@@ -150,14 +150,31 @@ COPY CODE
 ```
 mkdir app
 ```
-Create the file app/app.module.ts with the following content:
+Create the file app/main.ts with the following content:
 ```
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { Component } from '@angular/core';
+
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// CREATE OUR COMPONENT
+@Component({
+  selector: 'my-app',
+  template: '<h1>Hellooo World :) !!</h1>'
+})
+export class AppComponent { }
+
+// CREATE OUR MODULE
 @NgModule({
-  imports:      [ BrowserModule ]
+  imports:      [ BrowserModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
+
+// BOOTSTRAP OUR APPLICATION
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);
 ```
 This is the entry point to your application.
